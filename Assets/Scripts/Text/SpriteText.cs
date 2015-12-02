@@ -1,4 +1,8 @@
-﻿using UnityEngine;
+﻿// Written by Nicholas Olenz, 2015
+// Inspired by not wanting to pay $20 for something on the Unity Assets Store
+// Ported to Unity 5 in December 2015
+
+using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
