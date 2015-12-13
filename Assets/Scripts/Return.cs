@@ -6,6 +6,9 @@ public class Return : MonoBehaviour
 	// This script has become a bit of a potpurri of madness. It all works though.
 	// Kinda.
 
+	float moveTimer = 0f;
+	float moveReset = 0.33f;
+
 	void Update ()
 	{
 		if (Input.GetKeyDown(KeyCode.R))
@@ -21,21 +24,28 @@ public class Return : MonoBehaviour
 		// Dr. Yershova asked for discrete forward and backwards movement, so here's that. Need some proactive checks so you can't fall through the world.
 		// It doesn't work very well. Also, carpal tunnel.
 		// Forward / Backward
-		LayerMask level = 1 << LayerMask.NameToLayer ("Default");
-		Vector3 move = transform.forward;
-		move.y = 2;
-		bool hit = Physics.Raycast (transform.position + (0.25f * transform.forward), transform.position + (2f * move), level);
-		bool backHit = Physics.Raycast (transform.position - (0.25f * transform.forward), transform.position - (2f * move), level);
-		if (Input.GetKeyDown (KeyCode.UpArrow) && !hit) 
+		LayerMask level = 1 << LayerMask.NameToLayer ("Default");	// Get layer of level.
+		Vector3 move = transform.forward;	// Get the move direction unit vector.
+		move.y = 2;		// push it up a bit so slopes still work.
+		bool hit = Physics.Raycast (transform.position + (0.25f * transform.forward), transform.position + (2f * move), level);	// Check front hit
+		bool backHit = Physics.Raycast (transform.position - (0.25f * transform.forward), transform.position - (2f * move), level);	// Check rear hit
+		if (Input.GetKey (KeyCode.UpArrow) && !hit && moveTimer == 0f) 
 		{
+			moveTimer = 0.01f;
 			transform.position = transform.position + transform.forward;
-			transform.position = new Vector3(transform.position.x, transform.position.y + 0.4f, transform.position.z);
+			transform.position = new Vector3(transform.position.x, transform.position.y + 0.4f, transform.position.z);	// Add a tiny amount of height so slopes still work.
 		}
 
-		if (Input.GetKeyDown (KeyCode.DownArrow) && !backHit) 
+		if (Input.GetKey (KeyCode.DownArrow) && !backHit && moveTimer == 0f) 
 		{
+			moveTimer = 0.01f;
 			transform.position = transform.position - transform.forward;
 		}
+
+		if (moveTimer > moveReset)
+			moveTimer = 0f;
+		else if (moveTimer >= 0.01f)
+			moveTimer += Time.deltaTime;
 
 		// Just-In-Case position reset
 		if (transform.position.y < -20)
