@@ -27,8 +27,8 @@ public class Return : MonoBehaviour
 		LayerMask level = 1 << LayerMask.NameToLayer ("Default");	// Get layer of level.
 		Vector3 move = transform.forward;	// Get the move direction unit vector.
 		move.y = 2;		// push it up a bit so slopes still work.
-		bool hit = Physics.Raycast (transform.position + (0.25f * transform.forward), transform.position + (2f * move), level);	// Check front hit
-		bool backHit = Physics.Raycast (transform.position - (0.25f * transform.forward), transform.position - (2f * move), level);	// Check rear hit
+		bool hit = Physics.Raycast (transform.position + (0.05f * transform.forward), transform.position + (2f * move), level);	// Check front hit
+		bool backHit = Physics.Raycast (transform.position - (0.05f * transform.forward), transform.position - (2f * move), level);	// Check rear hit
 		if (Input.GetKey (KeyCode.UpArrow) && !hit && moveTimer == 0f) 
 		{
 			moveTimer = 0.01f;
@@ -52,10 +52,14 @@ public class Return : MonoBehaviour
 			Application.LoadLevel (Application.loadedLevel);
 
 		// 360 Controller code
-		/*
+
 		float x=1* Input.GetAxis ("Horizontal");
 		transform.Rotate (0, x, 0);
-		*/
+
+		float y = 1 * Input.GetAxis ("Vertical");
+		Vector3 newPos = transform.position + (0.1f * y) * transform.forward;
+		transform.position = newPos;
+
 
 		// Mouse left click and right click controls
 		if (Input.GetMouseButtonDown(0))
