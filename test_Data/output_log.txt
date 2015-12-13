@@ -3,29 +3,29 @@ Initialize engine version: 5.2.3f1 (f3d16a1fa2dd)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GTX 765M (ID=0x11e2)
-    Vendor:   NVIDIA
-    VRAM:     1990 MB
+    Renderer: Intel(R) HD Graphics Family (ID=0xa16)
+    Vendor:   Intel
+    VRAM:     128 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\newho_000\Documents\Unity Projects\498VRMuseum\test_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\newho_000\Documents\Unity Projects\498VRMuseum\test_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\newho_000\Documents\Unity Projects\498VRMuseum\test_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\newho_000\Documents\Unity Projects\498VRMuseum\test_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\newho_000\Documents\Unity Projects\498VRMuseum\test_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\newho_000\Documents\Unity Projects\498VRMuseum\test_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\newho_000\Documents\Unity Projects\498VRMuseum\test_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\newho_000\Documents\Unity Projects\498VRMuseum\test_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\Users\newho_000\Documents\Unity Projects\498VRMuseum\test_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\newho_000\Documents\Unity Projects\498VRMuseum\test_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\Users\newho_000\Documents\Unity Projects\498VRMuseum\test_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\newho_000\Documents\Unity Projects\498VRMuseum\test_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\newho_000\Documents\Unity Projects\498VRMuseum\test_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.168 seconds
-desktop: 1920x1080 60Hz; virtual: 3840x1080 at 0,0
+Platform assembly: C:\Users\Jeremy\Documents\CS 498\498VRMuseum\test_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Jeremy\Documents\CS 498\498VRMuseum\test_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Jeremy\Documents\CS 498\498VRMuseum\test_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Jeremy\Documents\CS 498\498VRMuseum\test_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Jeremy\Documents\CS 498\498VRMuseum\test_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Jeremy\Documents\CS 498\498VRMuseum\test_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Jeremy\Documents\CS 498\498VRMuseum\test_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Jeremy\Documents\CS 498\498VRMuseum\test_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Jeremy\Documents\CS 498\498VRMuseum\test_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Jeremy\Documents\CS 498\498VRMuseum\test_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Jeremy\Documents\CS 498\498VRMuseum\test_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Jeremy\Documents\CS 498\498VRMuseum\test_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Jeremy\Documents\CS 498\498VRMuseum\test_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.062 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-Platform assembly: C:\Users\newho_000\Documents\Unity Projects\498VRMuseum\test_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\Jeremy\Documents\CS 498\498VRMuseum\test_Data\Managed\System.dll (this message is harmless)
 Unity v5.2.3f1, Oculus Utilities v0.1.2.0, OVRPlugin v0.1.4.0.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
@@ -35,26 +35,15 @@ Creating volume controller...
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
 [VRDevice] Initialization of device oculus failed.
-Setting up 2 worker threads for Enlighten.
-  Thread -> id: 4ea0 -> priority: 1 
-  Thread -> id: 3ad4 -> priority: 1 
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 5.605669 ms
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 2a78 -> priority: 1 
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 13.527099 ms
 Unity v5.2.3f1, Oculus Utilities v0.1.2.0, OVRPlugin v0.1.4.0.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
 
-Unloading 85 unused Assets to reduce memory usage. Loaded Objects now: 495.
-Total: 0.336990 ms (FindLiveObjects: 0.050462 ms CreateObjectMapping: 0.018389 ms MarkObjects: 0.228366 ms  DeleteObjects: 0.038916 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 2.251590 ms
-Unity v5.2.3f1, Oculus Utilities v0.1.2.0, OVRPlugin v0.1.4.0.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-
-Unloading 88 unused Assets to reduce memory usage. Loaded Objects now: 442.
-Total: 0.505485 ms (FindLiveObjects: 0.050462 ms CreateObjectMapping: 0.033784 ms MarkObjects: 0.352813 ms  DeleteObjects: 0.067141 ms)
+Unloading 84 unused Assets to reduce memory usage. Loaded Objects now: 541.
+Total: 0.412332 ms (FindLiveObjects: 0.074969 ms CreateObjectMapping: 0.024097 ms MarkObjects: 0.252576 ms  DeleteObjects: 0.048194 ms)
 
