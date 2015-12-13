@@ -7,11 +7,16 @@ ModelImporter:
   fileIDToRecycleName:
     100000: //RootNode
     100002: Object001
+    100004: Object001_wire_000000000
     400000: //RootNode
     400002: Object001
+    400004: Object001_wire_000000000
     2300000: Object001
+    2300002: Object001_wire_000000000
     3300000: Object001
+    3300002: Object001_wire_000000000
     4300000: Object001
+    4300002: Object001_wire_000000000
   materials:
     importMaterials: 1
     materialName: 0
